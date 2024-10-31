@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike's World</title>
+    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <header class="fixed-bar">
+        <h1 class="page-title"><a href="../index.html">Mike's World</a></h1>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form class="form">
+            <label for="input-name">Name</label>
+            <input type="text" name="name" class="form-input" id="input-name" oninput="checkInput()">
+            <label for="input-mail">Mail</label>
+            <input type="text" name="email" class="form-input" id="input-mail" oninput="checkInput()">
+            <label for="input-message">Your Message</label>
+            <textarea for="message" cols="30" rows="10" class="form-input" id="input-message" oninput="checkInput()"></textarea>
+            <button type="submit" class="submit-button" disabled>Submit</button>
+        </form>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
